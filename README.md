@@ -11,6 +11,7 @@ These files require specific hardware to function. Until I have a proper README 
 
 * Arduino Uno R3
 * AdaFruit NeoPixel 12-LED ring
-* AdaFruit NeoPixel 8x8 64 RGB LED NeoMatrix
+* AdaFruit NeoPixel 8x8 NeoMatrix
+* AdaFruit NeoPixel 1x8 Stick
 * Standard breadboard + wires
 
