@@ -13,5 +13,6 @@ These files require specific hardware to function. Until I have a proper README 
 * AdaFruit NeoPixel 12-LED ring
 * AdaFruit NeoPixel 8x8 NeoMatrix
 * AdaFruit NeoPixel 1x8 Stick
+* AdaFruit NeoPixel 1x7 Jewel
 * Standard breadboard + wires
 
