@@ -8,12 +8,13 @@
 var pixel = require('node-pixel');
 var five = require('johnny-five');
 var child_process = require('child_process');
+var chalk = require('chalk');
 
 var board = new five.Board();
 var strip = null;
 
 board.on('ready', function boardReady() {
-  console.log('💥  board.ready');
+  console.log(chalk.white.bold('🤖  board.ready'));
 
   var led = new five.Led(10);
   led.brightness(48);
@@ -34,7 +35,7 @@ board.on('ready', function boardReady() {
 
   strip.on('ready', function stripReady() {
     strip.off();
-    console.log('👍  strip.ready with ' + strip.length + ' LEDs');
+    console.log(chalk.bold('👍  strip.ready with ' + strip.length + ' LEDs'));
 
     var forever = setInterval(function forever() {
       loop(fps);
@@ -63,7 +64,7 @@ board.on('ready', function boardReady() {
     var b = Math.floor(color.b * pattern[counter] / patternMax);
 
     // DEBUG
-    console.log('🔥', (g>70?'💥':''), r, g, b);
+    console.log('🔥 ', chalk.red(r), chalk.green(g), chalk.blue(b));
 
     // draw new pixel
     strip.color(`rgb(${r}, ${g}, ${b})`);

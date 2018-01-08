@@ -1,6 +1,7 @@
 {
   "private": true,
   "dependencies": {
+    "chalk": "^2.3.0",
     "johnny-five": "^0.10.6",
     "node-pixel": "^0.9.0",
     "randomcolor": "^0.5.3",
