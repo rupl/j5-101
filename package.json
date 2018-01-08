@@ -1,5 +1,8 @@
 {
-  "private": true,
+  "name": "j5-101",
+  "description": "My personal experiments learning Johnny Five + node-pixel.",
+  "repository": "git@github.com:rupl/j5-101.git",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^2.3.0",
     "johnny-five": "^0.10.6",
@@ -7,5 +10,9 @@
     "randomcolor": "^0.5.3",
     "sleep": "^5.1.0",
     "temporal": "^0.5.0"
+  },
+  "engines": {
+    "node": "4.2.1",
+    "npm": "2.14.7"
   }
 }
